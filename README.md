@@ -1,2 +1,2 @@
 # Projeto-ES
-Projeto prático da cadeira IF977 - Engenharia de Software.
+Projeto prático IF977 - Engenharia de Software.
