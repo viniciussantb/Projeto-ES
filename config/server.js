@@ -13,8 +13,7 @@ app.use(bodyParser.json());
 consign()
     .include('./application/routes')
     .then('./application/controllers')
-    .then('./application/models')
-    .then('./application/routes')
+    .then('./config/dbConn.js')
     .into(app)
 
 module.exports = app;
