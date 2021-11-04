@@ -1,16 +1,15 @@
 const mongoose = require('mongoose');
-var password = 'ar94Ll8gm3WAt1ba'
 
-const URI = "mongodb+srv://mongo:"+password+"@cluster-if977.u9rwo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const URI = 'mongodb+srv://root:root@if977cluster.u9rwo.mongodb.net/project?retryWrites=true&w=majority';
 const opts = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 }
 
-mongoose.connect(URI, opts, () => console.log('db connected...'));
+const connection = mongoose.connect(URI, opts)
+    .then(() => console.log('db connected...'))
+    .catch((err) => {console.log(err)});
 
-module.exports = function(){
-    return mongoose;
-}
+module.exports = connection;
 
 

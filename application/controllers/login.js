@@ -5,8 +5,7 @@ module.exports.getLogin= function(app, req, res){
 module.exports.userLogin = async function(app, req, res){
     const userModel = require('../models/user');
     var bodyData = req.body;
-    console.log(bodyData);
-    var users = await userModel.findOne(bodyData);
+    var users = await userModel.find(bodyData);
 
     try{
         if(users){
@@ -14,6 +13,7 @@ module.exports.userLogin = async function(app, req, res){
         }else{
             res.send('No user founded');
         }
+        
 
     } catch (error) {
         res.status(500).send(error);
