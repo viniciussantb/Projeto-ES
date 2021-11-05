@@ -1,16 +1,12 @@
 import React from 'react'
 import Button from './Button'
 
-export const Header = () => {
-
-    const onClick = () => {
-        console.log('Hello btn')
-    }
+export const Header = ({ showAddTask, showAdd }) => {
 
     return (
         <header className='header'>
             <h1>To do List</h1>
-            <Button title='add' color ='blue' onClick={onClick}/>
+            <Button title={showAdd ? 'Close' : 'Add' } color ={showAdd ? 'red' : 'green'} onClick={showAddTask}/>
         </header>
     )
 }
