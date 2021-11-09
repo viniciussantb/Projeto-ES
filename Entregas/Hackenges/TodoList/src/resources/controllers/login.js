@@ -5,11 +5,9 @@ module.exports.login = (app, req, res) => {
 module.exports.userLogin = (app, req, res) => {
     const userModel = require('../models/users');
 
-    var bodyData = req.body;
+    const {email, password} = req.body;
 
-    console.log(bodyData);
-
-    const user = userModel.findOne(bodyData).then((data)=>{
+    const user = userModel.findOne({email: email, password: password}).then((data)=>{
         if(!data){
             res.status(400).send({msg: "Usuário não encontrado"})
         }else{
