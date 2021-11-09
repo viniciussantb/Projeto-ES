@@ -6,7 +6,7 @@ import AddTask from "./components/AddTask";
 function App() {
 
   const [showAddTask, setShowAddTask] = useState(false);
-
+  const [userEmail, setUserEmail] = useState('');
   const [tasks, setTask] = useState([]);
 
   useEffect(()=>{
@@ -22,6 +22,7 @@ function App() {
     .then((data) => {
       console.log(data);
       setTask(data)
+      setUserEmail(data[0].userEmail);
     })
     .catch((err) => console.log(err));
   }, []);
@@ -35,10 +36,28 @@ function App() {
   }
 
   const addTask = (task) => {
-    
-    const id = Math.floor(Math.random()*1000+1);
-    const newTask = {id, ...task};
-    setTask([...tasks, newTask]);
+
+    const {title, description, reminder} = task;
+    const todoModel = {
+      title: title,
+      reminder: reminder,
+      description: description,
+      userEmail: userEmail
+    }
+
+    fetch('http://localhost:8080/todo', {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        'Access-Control-Allow-Origin': '*'
+      },
+      body : JSON.stringify(todoModel)
+    }).then((res)=>res.json())
+      .then((data)=>{
+        const newTask = data;
+        setTask([...tasks, newTask]);
+        console.log(tasks);
+      });
   }
 
   const toggleShowAddTask = () => {

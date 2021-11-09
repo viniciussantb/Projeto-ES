@@ -15,7 +15,7 @@ module.exports.userLogin = (app, req, res) => {
             console.log(data);
             req.session.email = email;
             req.session.authorized = true;
-            res.redirect('/todo');
+            res.status(200).send({msg: "Usuário encontrado com sucesso"});
         }}).catch((err)=>{
             console.log(err);
         });
