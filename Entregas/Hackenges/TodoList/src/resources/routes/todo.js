@@ -1,6 +1,6 @@
 module.exports = (app) => {
-    app.get('/todo', (req, res) => {
-        app.controllers.todo.todo(app, req, res);
+    app.post('/gettodos', (req, res) => {
+        app.controllers.todo.gettodos(app, req, res);
     });
 
     app.post('/todo', (req, res) => {

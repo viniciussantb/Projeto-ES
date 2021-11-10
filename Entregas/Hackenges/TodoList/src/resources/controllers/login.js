@@ -14,8 +14,7 @@ module.exports.userLogin = (app, req, res) => {
             const {email, password} = data;
             req.session.email = email;
             req.session.authorized = true;
-            console.log(req.session);
-            res.status(200).redirect('/todo');
+            res.status(200).redirect(307, '/gettodos');
         }}).catch((err)=>{
             console.log(err);
         });

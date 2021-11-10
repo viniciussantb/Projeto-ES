@@ -1,17 +1,9 @@
-module.exports.todo = (app, req, res)=>{
-    /*if(!req.session.authorized){
-       res.status(401).send({data: "É necessário a realização do login"});
-       return
-    }*/
+module.exports.gettodos = (app, req, res)=>{
     const todoModel = require('../models/todo');
-    const todo = new todoModel();
-    const email = req.session.email;
-
-    console.log(req.session);
-
-    // const email = req.session.email;
+    const email = req.body.email;
 
     todoModel.find({userEmail : email}).then((data)=>{
+        console.log(data);
         res.json(data);
     }).catch((err)=>{
         console.log(err)
@@ -19,10 +11,6 @@ module.exports.todo = (app, req, res)=>{
 }
 
 module.exports.saveTodo = (app, req, res)=>{
-    /*if(!req.session.authorized){
-        res.status(401).send({data: "É necessário a realização do login"});
-        return
-     }*/
      
     const todoModel = require('../models/todo');
 

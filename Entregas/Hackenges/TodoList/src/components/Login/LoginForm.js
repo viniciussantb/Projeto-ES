@@ -14,7 +14,6 @@ function LoginForm({ userLogin }) {
             alert("Password is required");
             return
         }
-
         userLogin({email, password});
     }
 

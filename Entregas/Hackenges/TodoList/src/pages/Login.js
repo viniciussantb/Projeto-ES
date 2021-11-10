@@ -1,9 +1,12 @@
-import React from 'react'
+import { useContext} from 'react'
 import { useNavigate } from 'react-router-dom';
 import LoginForm from '../components/Login/LoginForm';
+import { AuthApiContext } from '../context/AuthApiContext';
+import { EmailContext } from '../context/EmailContext';
 
 function Login() {
-
+    const {setAuth} = useContext(AuthApiContext);
+    const {setEmail} = useContext(EmailContext);
     const navigate = useNavigate();
 
     const userLogin = (userData) => {
@@ -15,15 +18,15 @@ function Login() {
             body: JSON.stringify(userData)
         })
         .then((res)=>{
-            if(!res.ok){
+            if(res.status === 400){
                 alert('User not found');
                 throw new Error(res.status);
             }
-            else return res.json();
-        })
-        .then((data)=>{
-            console.log(data.msg);
-            navigate('/todo', {replace: true});
+            else{
+                setAuth(true);
+                setEmail(userData.email);
+                return navigate('/todo', {replace: true});
+            }
         }).catch((err) => {
             console.log(err);
         });

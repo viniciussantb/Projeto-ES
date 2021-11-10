@@ -13,6 +13,7 @@
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
     "express-session": "^1.17.2",
+    "js-cookie": "^3.0.1",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.14",
     "react": "^17.0.2",
