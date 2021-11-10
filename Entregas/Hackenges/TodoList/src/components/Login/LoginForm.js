@@ -1,8 +1,16 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function LoginForm({ userLogin }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+
+    const onClick = (e)=>{
+        e.preventDefault();
+
+        navigate('/signUp', {replace: true});
+    }
 
     const onSubmit = (e)=>{
         e.preventDefault();
@@ -31,6 +39,11 @@ function LoginForm({ userLogin }) {
                 </div>
                 <input type='submit' value='Login' className='btn btn-block'/>
             </form>
+
+            <div>
+                <input type='button' value='Sign-UP' className='btn btn-block' onClick={onClick}/>
+            </div>
+            
         </div>
     )
 }

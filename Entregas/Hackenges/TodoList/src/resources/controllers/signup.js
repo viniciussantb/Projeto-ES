@@ -8,7 +8,7 @@ module.exports.saveSignup = (app, req, res) => {
 
     user.save().then((data)=> {
         console.log(data);
-        res.send({data : data})
+        res.json(data);
     })
         .catch((err)=> console.log(err))
 }
