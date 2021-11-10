@@ -12,10 +12,10 @@ module.exports.userLogin = (app, req, res) => {
             res.status(400).send({msg: "Usuário não encontrado"})
         }else{
             const {email, password} = data;
-            console.log(data);
             req.session.email = email;
             req.session.authorized = true;
-            res.status(200).send({msg: "Usuário encontrado com sucesso"});
+            console.log(req.session);
+            res.status(200).redirect('/todo');
         }}).catch((err)=>{
             console.log(err);
         });

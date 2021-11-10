@@ -5,8 +5,9 @@ module.exports.todo = (app, req, res)=>{
     }*/
     const todoModel = require('../models/todo');
     const todo = new todoModel();
+    const email = req.session.email;
 
-    const email = 'joao@joao.com';
+    console.log(req.session);
 
     // const email = req.session.email;
 
@@ -35,7 +36,6 @@ module.exports.saveTodo = (app, req, res)=>{
     }
 
     const todo = new todoModel(bodyDataModel);
-    console.log(req.session);
 
     todo.save().then((data)=>{
         console.log(data);
