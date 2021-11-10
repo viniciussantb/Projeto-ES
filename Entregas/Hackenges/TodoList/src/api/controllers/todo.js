@@ -3,7 +3,6 @@ module.exports.gettodos = (app, req, res)=>{
     const email = req.body.email;
 
     todoModel.find({userEmail : email}).then((data)=>{
-        console.log(data);
         res.json(data);
     }).catch((err)=>{
         console.log(err)
@@ -26,11 +25,20 @@ module.exports.saveTodo = (app, req, res)=>{
     const todo = new todoModel(bodyDataModel);
 
     todo.save().then((data)=>{
-        console.log(data);
         res.json(data);
     }).catch((err)=>{
         console.log(err);
         res.status(500).send("internal error. sorry...")
     });
+}
 
+module.exports.deleteTodo = (app, req, res) => {
+    const ObjectId = require('mongoose').Types.ObjectId;
+    const todoModel = require('../models/todo');
+    const query = {_id: ObjectId(req.body._id)}
+    todoModel.deleteOne(query, (err, result)=>{
+        if(err) throw err;
+        console.log(result);
+        res.status(200).json(result);
+    });
 }

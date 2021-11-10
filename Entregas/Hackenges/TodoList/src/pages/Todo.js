@@ -35,7 +35,20 @@ function App() {
   }, [auth, email, navigate]);
 
   const onDelete = (id) => {
-    setTask(tasks.filter((task)=>task._id !== id));
+    fetch("http://localhost:8080/todo", {
+      method: "delete",
+      headers: {
+        'content-type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      },
+      body: JSON.stringify({_id: id})
+    })
+    .then((res)=>res.json())
+    .then((data)=> {
+      console.log(data);
+      setTask(tasks.filter((task)=>task._id !== id));
+    })
+    .catch((err)=> console.log(err));
   }
 
   const toggleReminder = (id) => {
@@ -71,9 +84,13 @@ function App() {
     setShowAddTask(!showAddTask);
   }
 
+  const logout = () => {
+    navigate('/', {replace: true});
+  }
+
   return (
     <div className="container">
-      <Header showAddTask={toggleShowAddTask} showAdd={showAddTask}/>
+      <Header showAddTask={toggleShowAddTask} showAdd={showAddTask} logout={logout}/>
       {showAddTask && <AddTask onAdd={addTask}/>}
       <Tasks tasks={tasks} onDelete={onDelete} toggleReminder={toggleReminder}/>
     </div>
