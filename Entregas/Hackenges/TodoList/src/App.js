@@ -1,44 +1,27 @@
-import { useState } from "react";
-import { Header } from "./components/Header";
-import Tasks from "./components/Tasks";
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
+import Todo from './pages/Todo';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import AuthApiContextProvider from './context/AuthApiContext';
+import EmailContextProvider from './context/EmailContext';
 
 function App() {
 
-  const [tasks, setTask] = useState([
-    {
-      id : 1,
-      text : 'Doctor Appointment',
-      date : '5th feb 2010 2:40pm',
-      reminder : true
-    },
-    {
-      id : 2,
-      text : 'Gym',
-      date : '5th feb 2010 4:30pm',
-      reminder : true
-    },
-    {
-      id : 3,
-      text : 'School Appointment',
-      date : '5th feb 2010 6:40pm',
-      reminder : true
-    }
-  ]);
-
-  const onDelete = (id) => {
-    setTask(tasks.filter((task)=>task.id !== id));
-  }
-
-  const toggleReminder = (id) => {
-    setTask(tasks.map((task) => task.id === id ? {...task, reminder : !task.reminder} : task));
-  }
-
   return (
-    <div className="container">
-      <Header/>
-      <Tasks tasks={tasks} onDelete={onDelete} toggleReminder={toggleReminder}/>
-    </div>
-  );
+    <EmailContextProvider>
+      <AuthApiContextProvider>
+        <BrowserRouter>
+
+          <Routes>
+            <Route exact path='/' element={<Login/>}/>
+            <Route exact path='/signup' element={<Signup/>}/>
+            <Route exact path='/todo' element={ <Todo/>}/>
+          </Routes>
+
+        </BrowserRouter>
+      </AuthApiContextProvider>
+    </EmailContextProvider>
+  )
 }
 
-export default App;
+export default App
