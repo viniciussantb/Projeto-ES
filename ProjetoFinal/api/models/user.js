@@ -7,7 +7,17 @@ const userSchema = new Schema({
         required : true
     },
 
-    login : {
+    lastName : {
+        type: String,
+        required : true
+    },
+
+    numRides : {
+        type: Number
+        
+    },
+
+    email : {
         type : String,
         required : true
     },
@@ -15,7 +25,9 @@ const userSchema = new Schema({
     password : {
         type : String,
         required : true
-    }
+    },
+
+
 });
 
 module.exports = mongoose.model('User', userSchema);

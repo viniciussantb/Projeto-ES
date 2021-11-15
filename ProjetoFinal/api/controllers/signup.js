@@ -1,5 +1,5 @@
 module.exports.getSignup = function(app, req, res){
-    res.render('signUp');
+    res.json({msg: 'get signup'});
 }
 
 module.exports.saveSignup = function(app, req, res){

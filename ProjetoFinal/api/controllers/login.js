@@ -1,5 +1,5 @@
 module.exports.getLogin= function(app, req, res){
-    res.render('login');
+    res.json({msg: 'get login'});
 }
 
 module.exports.userLogin = async function(app, req, res){
