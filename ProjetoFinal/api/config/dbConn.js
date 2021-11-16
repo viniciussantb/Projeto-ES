@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb+srv://root:root@if977cluster.u9rwo.mongodb.net/project?retryWrites=true&w=majority';
+const URI = 'mongodb+srv://root:root@if977cluster.u9rwo.mongodb.net/chamAi?retryWrites=true&w=majority';
 const opts = {
     useNewUrlParser: true,
     useUnifiedTopology: true,

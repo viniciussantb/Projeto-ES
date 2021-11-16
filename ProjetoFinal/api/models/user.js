@@ -13,8 +13,8 @@ const userSchema = new Schema({
     },
 
     numRides : {
-        type: Number
-        
+        type: Number,
+        required : true
     },
 
     email : {
@@ -27,6 +27,30 @@ const userSchema = new Schema({
         required : true
     },
 
+    university : {
+        type : String,
+        required : true
+    },
+
+    course : {
+        type : String,
+        required : true
+    },
+
+    instagram : {
+        type : String,
+        required : false
+    },
+
+    phoneNumber : {
+        type : String,
+        required : true
+    },
+
+    ranking : {
+        type : Number,
+        required : true
+    }
 
 });
 

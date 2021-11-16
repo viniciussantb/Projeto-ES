@@ -12,8 +12,8 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
 consign()
-    .include('./application/routes')
-    .then('./application/controllers')
+    .include('./routes')
+    .then('./controllers')
     .then('./config/dbConn.js')
     .into(app)
 

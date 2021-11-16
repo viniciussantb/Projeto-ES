@@ -4,15 +4,15 @@ module.exports.getLogin= function(app, req, res){
 
 module.exports.userLogin = async function(app, req, res){
     const userModel = require('../models/user');
-    var bodyData = req.body;
-    console.log(bodyData);
-    var users = await userModel.findOne(bodyData);
+    const {email, password} = req.body;
+
+    var users = await userModel.findOne({email: email, password: password});
 
     try{
         if(users){
-            res.send(users);
+            res.json(users);
         }else{
-            res.send('No user founded');
+            res.json({msg: 'No user founded'});
         }
 
     } catch (error) {
