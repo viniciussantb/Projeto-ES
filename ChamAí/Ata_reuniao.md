@@ -1,10 +1,8 @@
-#ChamAí
-
 ## Ata de Reunião
 
 Data         | Local
 ------------ | -------------
-06/11/2021   \  Home office 
+06/11/2021   | Home office 
 
 
 ### Participantes
