@@ -14,3 +14,34 @@
 - Criação de histórias de usuários iniciais;
 - Criação de testes automatizados (TDD) iniciais;
 - Postmortem da Iteração 1.
+
+
+### Ata Reunião
+
+#### Participantes
+- Antonio Marcelo (amb6) 
+- Eraldo Cassimiro (ejces)
+- Mayara Gomes (mgop)
+- Vinicius Oliveira (vmo2) 
+- Vinicius Santiago (vsb)
+
+#### Pontos
+* Definição da solução com o uso de JS, nodejs
+* Brainstorm sobre possíveis produtos/serviços
+* Discussão sobre objetivo principal da solução, possível público alvo
+* Brainstorm sobre possíveis funcionalidades básicas
+* Definição de ferramentas (trello, discord, github, figma)
+
+#### Ações a serem tomadas
+* Definição de ID visual
+* Definição/votação do produto/serviço a ser focado
+* Criação de repositório
+* Compartilhamento de acessos às ferramentas
+* Estudo do NodeJS
+
+
+### Value Proposition Canvas
+[ChamAí _ Canvas Proposta de Valor.pdf](https://github.com/viniciussantb/Projeto-ES/files/7598657/ChamAi._.Canvas.Proposta.de.Valor.pdf)
+
+### Board Kanban
+![boardKanban](https://user-images.githubusercontent.com/55957552/143312140-1ea38911-8a64-4eb7-9c97-de7d2031ceeb.PNG)
