@@ -1,0 +1,89 @@
+.main-home-container {
+    display: flex;
+
+    height: 500px;
+    width: 1000px;
+
+    box-shadow: -20px 20px 50px #472dd6;
+
+    
+    border-radius: 50px 50px 50px 50px;
+
+    
+}
+
+.photo-home-description {
+    background-color: #5644fc;
+    
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 50px 0 0 50px;
+    
+    
+}
+
+
+
+.div-home-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 40%;
+    background-color: white;
+    
+    border-radius: 0 50px 50px 0;
+}
+
+.div-home-buttons .login,
+.div-home-buttons .cadastro {
+    background-color: #5644fc;
+    border-radius: 10px;
+    
+    height: 50px;
+    width: 300px;
+    
+    border: none;
+    color: white;
+    
+    margin: 8px;
+    
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.photo-home-description {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-home-description p {
+    width: 80%;
+    text-align: center;
+
+    font-family: cursive;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    text-align: center;
+}
+
+.photo-home-description img {
+    height: 200px;
+}

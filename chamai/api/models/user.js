@@ -14,7 +14,8 @@ const userSchema = new Schema({
 
     numRides : {
         type: Number,
-        required : true
+        required : true,
+        default: 0
     },
 
     email : {
@@ -39,7 +40,8 @@ const userSchema = new Schema({
 
     instagram : {
         type : String,
-        required : false
+        required : false,
+        default: ''
     },
 
     phoneNumber : {
@@ -49,7 +51,8 @@ const userSchema = new Schema({
 
     ranking : {
         type : Number,
-        required : true
+        required : true,
+        default: 0
     }
 
 });

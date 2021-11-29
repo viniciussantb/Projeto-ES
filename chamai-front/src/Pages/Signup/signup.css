@@ -1,0 +1,118 @@
+.main-container {
+    display: flex;
+
+    height: 500px;
+    width: 1000px;
+
+    box-shadow: -20px 20px 50px #472dd6;
+
+    
+    border-radius: 50px 50px 50px 50px;
+
+    
+}
+
+.photo-description {
+    background-color: #5644fc;
+    
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 50px 0 0 50px;
+    
+    
+}
+
+
+
+.div-buttons {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    height: 500px;
+    width: 40%;
+    background-color: white;
+    
+    border-radius: 0 50px 50px 0;
+}
+
+.div-buttons .signin-header {
+    font-family: cursive;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+button {
+    background-color: #5644fc;
+    border-radius: 10px;
+    
+    height: 50px;
+    width: 300px;
+
+    border: none;
+    color: white;
+    
+    margin: 8px;
+
+    cursor: pointer;
+    
+}
+
+.photo-description {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-description p {
+    width: 80%;
+    text-align: center;
+
+    font-family: cursive;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    text-align: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #18133b;
+}
+
+button p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+input {
+    background-color: #5644fc;
+    border: none;
+    margin: 10px;
+
+    border-radius: 10px;
+
+    height: 50px;
+    width: 300px;
+
+    text-align: center;
+    text-justify: center;
+}
+
+input::placeholder {
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    
+}

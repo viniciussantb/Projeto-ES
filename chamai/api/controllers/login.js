@@ -4,6 +4,7 @@ module.exports.getLogin= function(app, req, res){
 
 module.exports.userLogin = async function(app, req, res){
     const userModel = require('../models/user');
+    console.log(req.body);
     const {email, password} = req.body;
 
     var users = await userModel.findOne({email: email, password: password});
