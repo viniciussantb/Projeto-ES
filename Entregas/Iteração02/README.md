@@ -24,6 +24,7 @@
 | Criação da página de cadastro           | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
 | Integração do frontend com o backend    | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
 | Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação do Modelo ER | [Vinícius Santiago](https://github.com/viniciussantb) |
 
 ### O que não foi feito
 * Criação da página do feed
