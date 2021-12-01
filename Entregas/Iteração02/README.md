@@ -1,36 +1,35 @@
-# Iteração 1
+# Iteração 2
 
 | Início da Iteração | Término da iteração |
 | ------------------ | ------------------- |
-| 11/10/2021         | 24/11/2021          |
+| 24/11/2021         | 01/12/2021          |
 
 ### O que estava planejado
-| Atividade                                                    | Atribuição                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Primeira reunião para definição de escopo do projeto.        | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Criação da proposta de valor, do modelo de negócio e do modelo de projeto. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00) |
-| Criação da base da aplicação e definição de rotas do backend. | [Vinícius Santiago](https://github.com/viniciussantb)        |
-| Definição do layout da aplicação, definição da paleta de cores e protótipagem do projeto. | [Vinícius Oliveira](https://github.com/vnmoliveira)          |
-| Criação das telas do frontend.                               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Oliveira](https://github.com/vnmoliveira) |
-| Reuniões semanais nos fins de semana.                        | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Atividade                               | Atribuição                                                   |
+| --------------------------------------- | ------------------------------------------------------------ |
+| Criação da página de home               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página de login              | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página de cadastro           | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Integração do frontend com o backend    | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página do feed               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) [Vinícius Oliveira](https://github.com/vnmoliveira) |
+| Creação da página de carona             | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) [Vinícius Oliveira](https://github.com/vnmoliveira) |
+| Testes unitários                        | [Vinícius Santiago](https://github.com/viniciussantb)        |
 
 ### O que foi feito
-| Atividade                                                    | Atribuição                                                   |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Primeira reunião para definição de escopo do projeto.        | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Criação da proposta de valor, do modelo de negócio e do modelo de projeto. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00) |
-| Criação da base da aplicação e definição de rotas do backend. | [Vinícius Santiago](https://github.com/viniciussantb)        |
-| Definição do layout da aplicação, definição da paleta de cores e prototipagem do projeto | [Vinícius Oliveira](https://github.com/vnmoliveira)          |
-| Criação das telas Home, cadastro e login                     | [Antônio](https://github.com/antoniomarcelo12)               |
-| Reuniões semanais nos finais de semana.                      | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
-|                                                              |                                                              |
+| Atividade                               | Atribuição                                                   |
+| --------------------------------------- | ------------------------------------------------------------ |
+| Criação da página de home               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página de login              | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página de cadastro           | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Integração do frontend com o backend    | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
 
 ### O que não foi feito
-* Finalização do protótipo
-* Finalização de todas as telas do frontend
+* Criação da página do feed
+* Creação da página de carona
+* Testes unitários
 ### Planejado para próxima iteração
-
-* Criação de um MVP
 
 * Finalização do backend
 * Finalização do frontend
@@ -46,27 +45,14 @@
 - Vinicius Oliveira (vmo2) 
 - Vinicius Santiago (vsb)
 
-#### Pontos
-* Definição da solução com o uso de JS, nodejs
-* Brainstorm sobre possíveis produtos/serviços
-* Discussão sobre objetivo principal da solução, possível público alvo
-* Brainstorm sobre possíveis funcionalidades básicas
-* Definição de ferramentas (trello, discord, github, figma)
-
 #### Ações a serem tomadas
-* Definição de ID visual
-* Definição/votação do produto/serviço a ser focado
-* Criação de repositório
-* Compartilhamento de acessos às ferramentas
-* Estudo do NodeJS
-
-
-## Value Proposition Canvas
-![ValuePropositionCanvas](https://user-images.githubusercontent.com/55957552/143328111-b928846d-e41a-410a-a102-5df7a357e34f.PNG)
+* Atualização do repositório
+* Reorganização do planejamento para os novos prazos
+* Estudo de testes automatizados
 
 
 ## Board Kanban
-![boardKanban](https://user-images.githubusercontent.com/55957552/143312140-1ea38911-8a64-4eb7-9c97-de7d2031ceeb.PNG)
+![Imagem](https://media.discordapp.net/attachments/899004524650446872/915709004481724446/unknown.png?width=400&height=201)
 
 ## Mockup Feed de Caronas
 ![feed_figma](https://user-images.githubusercontent.com/55957552/143327896-6b239704-6b8a-49c4-b3f3-efa50d80ec6d.png)
@@ -92,6 +78,5 @@
 
 ## Lições Aprendidas
 * Conceitos básicos do React como Hooks, Componentes e Propriedades
-* Criar protótipos reais com o Figma
 * Boas práticas de trabalho em equipe com controle de repositório
-* Importância de seguir o planjamento definido
+* Aprendizado com testes automatizados
