@@ -52,7 +52,8 @@
 
 
 ## Board Kanban
-![Imagem](https://media.discordapp.net/attachments/899004524650446872/915709004481724446/unknown.png?width=400&height=201)
+![Capturar](https://user-images.githubusercontent.com/55957552/144314315-5cf542d9-1120-413b-bf8f-b42138bd2a7f.PNG)
+
 
 ## Mockup Feed de Caronas
 ![feed_figma](https://user-images.githubusercontent.com/55957552/143327896-6b239704-6b8a-49c4-b3f3-efa50d80ec6d.png)
