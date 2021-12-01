@@ -23,7 +23,7 @@
 | Criação da página de login              | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
 | Criação da página de cadastro           | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
 | Integração do frontend com o backend    | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Reuniões semanais nos finais de semana. | [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb),[Antônio](https://github.com/antoniomarcelo12) |
 | Criação do Modelo ER | [Vinícius Santiago](https://github.com/viniciussantb) |
 
 ### O que não foi feito
@@ -40,9 +40,7 @@
 ## Ata Reunião
 
 #### Participantes
-- Antonio Marcelo (amb6) 
-- Eraldo Cassimiro (ejces)
-- Mayara Gomes (mgop)
+- Antonio Marcelo (amb6)
 - Vinicius Oliveira (vmo2) 
 - Vinicius Santiago (vsb)
 
