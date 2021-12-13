@@ -7,6 +7,7 @@ module.exports.getRides = async (app, req, res) => {
         if(!rides){
             res.json({msg: "Não há caronas disponíveis..."})
         }else{
+            console.log(rides);
             res.json(rides);
         }
     }catch(error){

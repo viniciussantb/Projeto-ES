@@ -11,9 +11,9 @@ module.exports.userLogin = async function(app, req, res){
 
     try{
         if(users){
-            res.json(users);
+            res.status(200).json(users);
         }else{
-            res.json({msg: 'No user founded'});
+            res.status(404).json({msg: 'No user founded'});
         }
 
     } catch (error) {
