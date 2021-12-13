@@ -1,0 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Fredoka One', 'Franklin Gothic Medium', sans-serif;
+}
+
+html, body, #root {
+  background-color: rgba(157, 140, 255);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+

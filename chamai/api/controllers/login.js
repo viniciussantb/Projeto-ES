@@ -13,7 +13,7 @@ module.exports.userLogin = async function(app, req, res){
         if(users){
             res.status(200).json(users);
         }else{
-            res.status(404).json({msg: 'No user founded'});
+            res.status(404).json({msg: 'No user found'});
         }
 
     } catch (error) {

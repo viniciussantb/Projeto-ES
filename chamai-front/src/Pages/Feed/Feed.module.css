@@ -1,0 +1,60 @@
+.conteudoFeed {
+    flex: 1 0 auto;
+}
+
+.feed {
+    
+    width: 60%;
+    margin: auto auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 60px;
+}
+
+.painelUsuario {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: rgba(86, 68, 252, 1);
+    border-radius: 60px 60px 0 0;
+    overflow: hidden;
+    color: white;
+}
+
+.painelUsuario p {
+    margin-top: 10px;
+}
+
+.feedCaronas {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 60px;
+}
+
+.dadosUsuario {
+    float: left;
+    margin-left: 10px;
+}
+
+.dadosCarro {
+    float: right;
+    margin-right: 40px;
+    position: relative;
+
+}
+
+.dadosCarro p{
+    margin-top: 3px;
+}
+
+.dadosCarro img {
+    position: relative;
+    right: 30px;
+    top: 10px;
+
+}
+
+.fotoUsuario {
+    float: left;
+}

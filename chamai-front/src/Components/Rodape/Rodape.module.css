@@ -1,0 +1,37 @@
+.rodapeContainer {
+    height: 50px;
+    background-color: rgba(86, 68, 252, 1);
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;;
+    list-style: none;
+    margin-top: -10px;
+    margin-right: 10px;
+    
+}
+
+ul li {
+    float: right;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-left: -25px;
+
+}
+
+h4 {
+    font-weight:100;
+    color: white;
+    float: left;
+    display: block;
+    margin-top: 15px;
+    margin-left: 560px;
+}
+
+
+
