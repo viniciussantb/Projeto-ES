@@ -1,6 +1,6 @@
 .rideContainer {
     color: white;
-    height: 250px;
+    height: 230px;
     width: 350px;
     border-radius: 15px;
     padding: 15px;
@@ -11,3 +11,70 @@
 
 }
 
+.rideContainer:hover {
+    background-color: rgba(24, 19, 59);
+    cursor: pointer;
+    
+}
+
+.userPerfil {
+    height: 100px;
+    
+
+}
+
+.userData {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 210px;
+    
+
+}
+
+.userData p {
+    margin-left: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.rideData {
+    height: 100px;
+    
+    margin-top: 15px;
+
+}
+
+.rideData p {
+    font-size: 18px;
+    margin-top: 4px;
+
+}
+
+.rideDataLeft {
+    display: block;
+    height: 100px;
+    width: 50%;
+    float:left;
+}
+
+.rideDataLeft p {
+    margin-left: 10px;
+}
+
+.rideDataRight {
+    display: block;
+    height: 100px;
+    width: 50%;
+   
+    float:right;
+    text-align: right;
+}
+
+.userPhoto {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 1px solid white;
+    float: left;
+}
