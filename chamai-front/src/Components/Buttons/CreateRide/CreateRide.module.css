@@ -1,0 +1,14 @@
+.createRiderButton {
+    text-align: center;
+    margin-top: 40px;
+    padding: 8px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(24, 19, 59);
+}
+
+.createRiderButton:hover {
+    background-color: white;
+    color: rgba(24, 19, 59);
+}

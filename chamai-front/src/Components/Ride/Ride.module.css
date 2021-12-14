@@ -1,0 +1,13 @@
+.rideContainer {
+    color: white;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #5644fc;
+    float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
