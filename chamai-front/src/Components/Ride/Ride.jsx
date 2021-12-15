@@ -1,7 +1,7 @@
 import styles from './Ride.module.css'
 
 
-function Ride() {
+function Ride({ rideProps }) {
     return (
         <div className={styles.rideContainer}>
             <div className={styles.userPerfil}>
@@ -21,12 +21,12 @@ function Ride() {
                 <div className={styles.rideDataLeft}>
                     <p>Partida</p>
                     <p>Chegada</p>
-                    <p>Valor</p>
+                    <p>{rideProps.price}</p>
 
                 </div>
 
                 <div className={styles.rideDataRight}>
-                    <p>Data</p>
+                    <p>{rideProps.date}</p>
                     <p>Hora</p>
                     <p>Vagas</p>
 

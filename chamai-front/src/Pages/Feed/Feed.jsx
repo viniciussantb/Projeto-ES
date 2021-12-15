@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import EmailContext from '../../context/EmailContext';
+import { EmailContext } from '../../context/EmailContext';
 import { FeedService } from '../../services/FeedService';
 import styles from './Feed.module.css';
 
@@ -12,27 +12,43 @@ import CreateRide from '../../components/Buttons/CreateRide/CreateRide';
 // Salvei os dois itens dentro da pasta Feed, (carro.png e perfilPadrao.png).
 import carro from './carro.png';
 import perfilPadrao from './perfilPadrao.png';
+import { RidesContext } from '../../context/RidesContext';
+
+
 
 const Feed = () => {
-  const [ rides, setRides ] = useState([]);
+  const {rides} = useContext(RidesContext);
+  const [ user, setUser ] = useState('');
+  const {email, setEmail} = useContext(EmailContext);
 
   useEffect(() => {
-    async function getRides() {
-      const response = await FeedService.rides();
-      return response;
-    }
-    const response = getRides();
-    if (response.status === 200) {
-      setRides(response.status);
-    }
-    console.log(response);
+    console.log('rides');
+    console.log(rides);
+    fetch('http://localhost:8080/user',{
+    method: "POST",
+    headers: { 'content-type' : 'application/json' },
+    body: JSON.stringify({email: email}),
+    }).then(res => res.json())
+      .then(data => {
+        setUser(data);
+        console.log(user);
+      })
+      .catch(err => console.log(err));
   }, []);
 
   async function getRides() {
-    const response = await FeedService.rides();
-    return response;
+    await fetch('http://localhost:8080/rides',{
+      method: "GET",
+      headers: { 'content-type' : 'application/json' },
+      }).then(res => res.json())
+        .then(data => {
+          rides = data;
+          console.log(rides);
+        })
+        .catch(err => console.log(err));
   }
 
+  const rideList = rides.map(ride => <Ride key={ride._id} rideProps={ride}/>)
   return(
     <div className={styles.conteudoFeed}>
 
@@ -44,9 +60,9 @@ const Feed = () => {
                 
                 
                 <div className={styles.dadosUsuario}>
-                    <p>{"Vinícius"}</p>
-                    <p>{"UFPE"}</p>
-                    <p>{"Sistemas de Informação"}</p>
+                    <p>{user.name}</p>
+                    <p>{user.university}</p>
+                    <p>{user.course}</p>
                     <CreateRide />
                     
                    
@@ -64,11 +80,7 @@ const Feed = () => {
             </div>
 
             <div className={styles.feedCaronas}>
-                <Ride />
-                <Ride />
-                <Ride />
-                <Ride />
-                <Ride />
+              {rideList}
             </div>
       
         </div>
