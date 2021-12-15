@@ -4,9 +4,9 @@ import { FeedService } from '../../services/FeedService';
 import styles from './Feed.module.css';
 
 //Importando o componente Ride
-import Ride from '../../Components/Ride/Ride'
+import Ride from '../../components/Ride/Ride'
 
-import CreateRide from '../../Components/Buttons/CreateRide/CreateRide';
+import CreateRide from '../../components/Buttons/CreateRide/CreateRide';
 
 // Brother, estou importando o icone do carro e uma foto de perfil padrão pra testar a aplicação
 // Salvei os dois itens dentro da pasta Feed, (carro.png e perfilPadrao.png).

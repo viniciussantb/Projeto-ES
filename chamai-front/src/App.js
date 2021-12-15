@@ -8,8 +8,8 @@ import EmailContextProvider from './context/EmailContext';
 import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 
 //Layoyt - Importação do cabeçalho e do rodapé
-import Cabecalho from './Components/Cabecalho/Cabecalho'
-import Rodape from './Components/Rodape/Rodape'
+import Cabecalho from './components/Cabecalho/Cabecalho'
+import Rodape from './components/Rodape/Rodape'
 
 
 
