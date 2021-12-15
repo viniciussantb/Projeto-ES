@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import EmailContext from '../../context/EmailContext';
+import { EmailContext } from '../../context/EmailContext';
 import { FeedService } from '../../services/FeedService';
 import styles from './Feed.module.css';
 import Ride from '../../components/Ride/Ride'

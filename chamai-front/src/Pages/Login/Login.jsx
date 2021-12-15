@@ -10,8 +10,7 @@ import './login.css';
 import { UserContext } from "../../context/UserContext";
 
 const Login = () => {
-    const {email, setEmail} = useContext(EmailContext);
-    const {user, setUser} = useContext(UserContext);
+    const { setUser } = useContext(UserContext);
     const navigate = useNavigate();
 
     const onSubmit = async (data) => {
