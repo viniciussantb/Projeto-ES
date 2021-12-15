@@ -32,7 +32,7 @@
 }
 
 
-.div-buttons {
+.div-buttons-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,7 @@
     border-radius: 0 50px 50px 0;
 }
 
-.div-buttons .login-title {
+.div-buttons-login .login-title {
     font-size: 32px;
 }
 
@@ -92,6 +92,10 @@ button {
 
 button p {
     font-size: 1.2rem;
+}
+
+.div-buttons-login button {
+    height: 45px;
 }
 
 input {
