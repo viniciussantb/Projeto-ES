@@ -4,30 +4,32 @@ import Signup from './Pages/Signup/Signup';
 import Login from './Pages/Login/Login';
 import Feed from './Pages/Feed/Feed';
 import EmailContextProvider from './context/EmailContext';
+import RidesContextProvider from './context/RidesContext';
 
 //Layoyt - Importação do cabeçalho e do rodapé
 
-import Cabecalho from './Components/Cabecalho/Cabecalho'
-import Rodape from './Components/Rodape/Rodape'
+import Cabecalho from './components/Cabecalho/Cabecalho'
+import Rodape from './components/Rodape/Rodape'
 
 
 
 function App() {
 
   return (
-  <EmailContextProvider>
-    <BrowserRouter>
-      <Cabecalho />
-      <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route exact path='/signup' element={<Signup/>}/>
-        <Route exact path='/login' element={ <Login/>}/>
-        <Route exact path='/feed' element={ <Feed/>}/>
-      </Routes>
-      <Rodape />
-    </BrowserRouter>
-  </EmailContextProvider>
-
+  <RidesContextProvider>
+    <EmailContextProvider>
+      <BrowserRouter>
+        <Cabecalho />
+        <Routes>
+          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/signup' element={<Signup/>}/>
+          <Route exact path='/login' element={ <Login/>}/>
+          <Route exact path='/feed' element={ <Feed/>}/>
+        </Routes>
+        <Rodape />
+      </BrowserRouter>
+    </EmailContextProvider>
+  </RidesContextProvider>
   )
 }
 
