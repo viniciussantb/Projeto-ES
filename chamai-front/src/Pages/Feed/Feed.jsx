@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { EmailContext } from '../../context/EmailContext';
 import { FeedService } from '../../services/FeedService';
 import styles from './Feed.module.css';
-import Ride from '../../components/Ride/Ride'
-import CreateRide from '../../components/Buttons/CreateRide/CreateRide';
+import Ride from '../../Components/Ride/Ride'
+import CreateRide from '../../Components/Buttons/CreateRide/CreateRide';
 import carro from './carro.png';
 import perfilPadrao from './perfilPadrao.png';
 import { UserContext } from '../../context/UserContext';
@@ -60,6 +60,11 @@ const Feed = () => {
 
             <div className={styles.feedCaronas}>
               {rideList}
+              <div>
+                <p>
+                
+                </p>
+              </div>
             </div>
       
         </div>

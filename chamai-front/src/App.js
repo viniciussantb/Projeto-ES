@@ -6,8 +6,8 @@ import Feed from './Pages/Feed/Feed';
 import EmailContextProvider from './context/EmailContext';
 import UserContextProvider from './context/UserContext';
 import CreateRidePage from './Pages/CreateRide/CreateRidePage'
-import Cabecalho from './components/Cabecalho/Cabecalho'
-import Rodape from './components/Rodape/Rodape'
+import Cabecalho from './Components/Cabecalho/Cabecalho'
+import Rodape from './Components/Rodape/Rodape'
 
 
 
