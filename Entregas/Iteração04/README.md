@@ -7,20 +7,19 @@
 ### O que estava planejado
 | Atividade                               | Atribuição                                                   |
 | --------------------------------------- | ------------------------------------------------------------ |
-| Criação da página do feed               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Criação da página de carona             | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Finalização do frontend                 | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Finalização do backend                  | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página do feed               | [Vinícius Oliveira](https://github.com/vnmoliveira), [Antônio](https://github.com/antoniomarcelo12) |
+| Criação da página de carona             | [Vinícius Oliveira](https://github.com/vnmoliveira), [Antônio](https://github.com/antoniomarcelo12) |
+| Finalização do frontend                 | [Vinícius Oliveira](https://github.com/vnmoliveira), [Antônio](https://github.com/antoniomarcelo12) |
+| Finalização do backend                  | [Vinícius Santiago](https://github.com/viniciussantb) |
 | Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Criação dos testes automatizados        | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb), [Vinícius Oliveira](https://github.com/vnmoliveira) |
-| Submeter a aplicação a testes           | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb), [Vinícius Oliveira](https://github.com/vnmoliveira) |      |
+| Submeter a aplicação a testes           |  [Vinícius Santiago](https://github.com/viniciussantb), [Vinícius Oliveira](https://github.com/vnmoliveira) |      |
 
 ### O que foi feito
 | Atividade                               | Atribuição                                                   |
 | --------------------------------------- | ------------------------------------------------------------ |
-| Criação da página do feed               | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Criação da página de carona             | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
-| Finalização do frontend                 | [Antônio](https://github.com/antoniomarcelo12), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página do feed               | [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Criação da página de carona             | [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
+| Finalização do frontend                 | [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
 | Reuniões semanais nos finais de semana. | [Neto](https://github.com/NetoCassimiro), [Mayara](https://github.com/maygomes00), [Vinícius Oliveira](https://github.com/vnmoliveira), [Vinícius Santiago](https://github.com/viniciussantb) |
 
 
