@@ -5,7 +5,7 @@ function Cabecalho() {
     return (
         <div className={styles.cabecalhoContainer}>
            <div>
-                <img src={logo} width="50px"/>
+                <img src={logo} width="47px"/>
            </div>
         </div>
     )

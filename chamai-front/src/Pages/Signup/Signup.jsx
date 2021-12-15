@@ -2,6 +2,9 @@ import React from 'react'
 import SignupForm from './SignupForm';
 import { useNavigate } from 'react-router';
 
+import './signup.css'
+
+
 function Signup() {
   const navigate = useNavigate();
 

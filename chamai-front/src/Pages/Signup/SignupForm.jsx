@@ -4,6 +4,7 @@ import React, {
 import SigninImg from '../../assets/logo-signin.png'
 
 import './signup.css'
+
 const Signup = ({ onSubmit }) => {
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -30,13 +31,13 @@ const Signup = ({ onSubmit }) => {
     }
 
     return (
-        <div className="main-container">
-            <div className='photo-description'>
+        <div className="main-container-signup">
+            <div className='photo-description-signup'>
                 <img src={SigninImg} alt="" />
             </div>
 
             
-            <div className="div-buttons">
+            <div className="div-buttons-signup">
                     <p className='signin-header'>Cadastro</p>
                     <input type="name" placeholder='Nome' value={name} onChange={(e)=> setName(e.target.value)}/>
                     <input type="name" placeholder='Sobrenome' value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
