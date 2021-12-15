@@ -38,22 +38,10 @@ const userSchema = new Schema({
         required : true
     },
 
-    instagram : {
-        type : String,
-        required : false,
-        default: ''
-    },
-
     phoneNumber : {
         type : String,
         required : true
     },
-
-    ranking : {
-        type : Number,
-        required : true,
-        default: 0
-    }
 
 });
 

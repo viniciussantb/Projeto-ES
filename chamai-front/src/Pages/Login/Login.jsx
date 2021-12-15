@@ -7,9 +7,11 @@ import { EmailContext } from "../../context/EmailContext";
 import { LoginService } from "../../services/LoginService";
 import { useNavigate } from "react-router";
 import './login.css';
+import { UserContext } from "../../context/UserContext";
 
 const Login = () => {
     const {email, setEmail} = useContext(EmailContext);
+    const {user, setUser} = useContext(UserContext);
     const navigate = useNavigate();
 
     const onSubmit = async (data) => {
@@ -19,15 +21,12 @@ const Login = () => {
                 "content-type" : "application/json"
             },
             body : JSON.stringify(data)
-          }).then((res) => {
-                console.log(res.status);
-                if (res.status === 200){
-                    setEmail(data.userEmail);
-                    navigate('/feed', {replace: true})
-                } else {
-                    alert('User not found!');
-                }
-            }).catch(err => console.log(err));
+          }).then(res => res.json())
+            .then(data => {
+                setUser(data);
+                navigate('/feed', { replace: true })
+            })
+            .catch(err => console.log(err));
     }
 
     return (

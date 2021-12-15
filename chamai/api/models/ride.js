@@ -6,18 +6,33 @@ const rideSchema = new mongoose.Schema({
         required : true
     },
 
+    name : {
+        type : String,
+        required : true
+    },
+
+    university : {
+        type : String,
+        required : true
+    },
+
     date : {
         type : Date,
         required : true
     },
 
+    time : {
+        type : String,
+        required : true
+    },
+
     meetingLocation : {
-        type : Object,
+        type : String,
         required : true
     },
 
     endLocation : {
-        type : Object,
+        type : String,
         required : true
     },
 
@@ -26,9 +41,9 @@ const rideSchema = new mongoose.Schema({
         required : true
     },
 
-    description : {
-        type: String,
-        required: false
+    vagas : {
+        type : Number,
+        required : true
     }
 
 

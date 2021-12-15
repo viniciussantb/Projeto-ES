@@ -7,11 +7,11 @@ module.exports.userLogin = async function(app, req, res){
     console.log(req.body);
     const {email, password} = req.body;
 
-    var users = await userModel.findOne({email: email, password: password});
+    var user = await userModel.findOne({email: email, password: password});
 
     try{
-        if(users){
-            res.status(200).json(users);
+        if(user){
+            res.status(200).json(user);
         }else{
             res.status(404).json({msg: 'No user found'});
         }

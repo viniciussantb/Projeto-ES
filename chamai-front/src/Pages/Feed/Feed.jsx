@@ -2,36 +2,31 @@ import React, { useContext, useEffect, useState } from 'react';
 import EmailContext from '../../context/EmailContext';
 import { FeedService } from '../../services/FeedService';
 import styles from './Feed.module.css';
-
-//Importando o componente Ride
 import Ride from '../../components/Ride/Ride'
-
 import CreateRide from '../../components/Buttons/CreateRide/CreateRide';
-
-// Brother, estou importando o icone do carro e uma foto de perfil padrão pra testar a aplicação
-// Salvei os dois itens dentro da pasta Feed, (carro.png e perfilPadrao.png).
 import carro from './carro.png';
 import perfilPadrao from './perfilPadrao.png';
+import { UserContext } from '../../context/UserContext';
 
 const Feed = () => {
   const [ rides, setRides ] = useState([]);
+  const {user} = useContext(UserContext);
 
   useEffect(() => {
+    //console.log(user);
     async function getRides() {
-      const response = await FeedService.rides();
-      return response;
+      await fetch('http://localhost:8080/rides', {
+        method: 'GET',
+        headers: { 'content-type' : 'application/json'},
+      }).then(res => res.json())
+        .then(data => {
+          setRides(data);
+        }).catch(err => console.log(err));
     }
-    const response = getRides();
-    if (response.status === 200) {
-      setRides(response.status);
-    }
-    console.log(response);
+    getRides();
   }, []);
 
-  async function getRides() {
-    const response = await FeedService.rides();
-    return response;
-  }
+  const rideList = rides.map( ride => <Ride key={ride._id} rideProps={ride}/> );
 
   return(
     <div className={styles.conteudoFeed}>
@@ -44,9 +39,9 @@ const Feed = () => {
                 
                 
                 <div className={styles.dadosUsuario}>
-                    <p>{"Vinícius"}</p>
-                    <p>{"UFPE"}</p>
-                    <p>{"Sistemas de Informação"}</p>
+                    <p>{user.name}</p>
+                    <p>{user.university}</p>
+                    <p>{user.course}</p>
                     <CreateRide />
                     
                    
@@ -64,11 +59,7 @@ const Feed = () => {
             </div>
 
             <div className={styles.feedCaronas}>
-                <Ride />
-                <Ride />
-                <Ride />
-                <Ride />
-                <Ride />
+              {rideList}
             </div>
       
         </div>
