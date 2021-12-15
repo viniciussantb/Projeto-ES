@@ -1,108 +1,96 @@
-.main-container {
+.main-container-signup {
     display: flex;
 
-    height: 500px;
-    width: 1000px;
+    height: 425px;
+    width: 725px;
 
-
+    margin: 50px auto;
     
     border-radius: 50px 50px 50px 50px;
-
     
 }
 
-.photo-description {
+.photo-description-signup {
     background-color: #5644fc;
     
     width: 60%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
     border-radius: 50px 0 0 50px;
-    
-    
+       
 }
 
 
 
-.div-buttons {
+.div-buttons-signup {
     /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
     text-align: center;
-    height: 500px;
+    height: 425px;
     width: 40%;
-    background-color: white;
-    
+    background-color: white;  
     border-radius: 0 50px 50px 0;
 }
 
-.div-buttons .signin-header {
-    font-family: cursive;
-    font-size: 32px;
-    font-weight: bolder;
-}
-
-button {
-    background-color: #5644fc;
-    border-radius: 10px;
-    
-    height: 50px;
-    width: 300px;
-
-    border: none;
-    color: white;
-    
-    margin: 8px;
-
-    cursor: pointer;
+.div-buttons-signup .signin-header {
+    margin-top: 7px;
+    font-size: 25px;
     
 }
 
-.photo-description {
+
+.photo-description-signup {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.photo-description p {
+.photo-description-signup p {
     width: 80%;
     text-align: center;
 
     font-family: cursive;
     color: white;
     font-size: 2rem;
-    font-weight: bolder;
     
     text-align: center;
 }
 
-button {
+.div-buttons-signup button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 225px;
+    margin-left: 35px;
+    font-weight: 300;
+    height: 37px;
 
     background-color: #18133b;
 }
 
-button p {
-    font-weight: bolder;
-    font-size: 1.2rem;
+.div-buttons-signup button p {
+    font-size: 1.1rem;
 }
 
-input {
+.photo-description-signup img {
+    margin-right: 30px;
+
+}
+
+.div-buttons-signup input {
     background-color: #5644fc;
     border: none;
-    margin: 10px;
+    margin: 7px;
 
-    border-radius: 10px;
+    border-radius: 6px;
 
-    height: 50px;
-    width: 300px;
+    height: 32px;
+    width: 225px;
 
     text-align: center;
     text-justify: center;
@@ -110,8 +98,7 @@ input {
 
 input::placeholder {
     color: white;
-    font-weight: bolder;
-    font-size: 24px;
+    font-size: 15px;
     text-align: center;
     
 }

@@ -6,8 +6,7 @@ import Feed from './Pages/Feed/Feed';
 import EmailContextProvider from './context/EmailContext';
 import RidesContextProvider from './context/RidesContext';
 
-//Layoyt - Importação do cabeçalho e do rodapé
-
+import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 import Cabecalho from './components/Cabecalho/Cabecalho'
 import Rodape from './components/Rodape/Rodape'
 
@@ -16,6 +15,7 @@ import Rodape from './components/Rodape/Rodape'
 function App() {
 
   return (
+
   <RidesContextProvider>
     <EmailContextProvider>
       <BrowserRouter>
@@ -30,6 +30,7 @@ function App() {
       </BrowserRouter>
     </EmailContextProvider>
   </RidesContextProvider>
+
   )
 }
 
