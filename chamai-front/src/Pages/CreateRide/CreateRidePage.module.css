@@ -1,0 +1,39 @@
+.createRidePage {
+    flex: 1 0 auto;
+
+}
+
+.createRideContainer {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    padding-top: 28px;
+    
+    
+}
+
+.createRideForm {
+    background-color: rgb(250, 245, 245);
+    border-radius: 33px;
+    margin-top: 20px;
+    padding: 20px;
+    height: 420px;
+}
+
+.createRideForm input, button {
+    height: 35px;
+    margin-top: 5px;
+}
+
+button {
+    
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}

@@ -16,7 +16,7 @@ const Home = () => {
             
             <div className="div-home-buttons">
                     <button className='login' onClick={()=> navigate('/login', {replace: true})}><p>Login</p></button>
-                    <button className='cadastro' onClick={()=> navigate('/signup', {replace: true})}><p>Cadastro</p></button>
+                    <button className='cadastro' onClick={()=> navigate('/signup', {replace: true})}> <p>Cadastro</p></button>
             </div>
             
         </div>

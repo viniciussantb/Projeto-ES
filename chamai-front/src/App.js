@@ -5,8 +5,9 @@ import Login from './Pages/Login/Login';
 import Feed from './Pages/Feed/Feed';
 import EmailContextProvider from './context/EmailContext';
 
-//Layoyt - Importação do cabeçalho e do rodapé
+import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 
+//Layoyt - Importação do cabeçalho e do rodapé
 import Cabecalho from './Components/Cabecalho/Cabecalho'
 import Rodape from './Components/Rodape/Rodape'
 
@@ -23,6 +24,8 @@ function App() {
         <Route exact path='/signup' element={<Signup/>}/>
         <Route exact path='/login' element={ <Login/>}/>
         <Route exact path='/feed' element={ <Feed/>}/>
+        <Route exact path='/createride' element={ <CreateRidePage/>}/>
+
       </Routes>
       <Rodape />
     </BrowserRouter>
