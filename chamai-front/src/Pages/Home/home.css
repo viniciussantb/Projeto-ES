@@ -37,8 +37,7 @@
     border-radius: 0 50px 50px 0;
 }
 
-.div-home-buttons .cadastro {
-    background-color: #5644fc;
+.div-home-buttons .cadastro, .login {
     border-radius: 10px;
     
     height: 45px;

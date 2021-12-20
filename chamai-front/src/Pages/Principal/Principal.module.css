@@ -1,0 +1,150 @@
+
+
+.containerPrincipal {
+    flex: 1 0 auto;
+    background-color: white;
+}
+
+
+.containerCarrossel {
+    height: 300px;
+    background-color: white;
+}
+
+
+.containerContact {
+    height: 400px;
+    background-color: rgba(86, 68, 252);
+
+}
+
+.textContact {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: rgba(86, 68, 252);
+    padding: 30px;
+
+}
+
+.textContact p {
+    margin-top: 60px;
+    color: white;
+    font-size: 30px;
+    margin-left: 93px;
+}
+
+.formContact {
+    width: 50%;
+    float: right;
+    height: 100%;
+    text-align: center;
+
+}
+
+.formContact form {
+    margin-top: 30px;
+    margin-left: 170px;
+}
+
+
+.formContact input {
+    background-color: white;
+    color: #18133b;
+    height: 37px;
+    border-radius: 4px;
+    margin: 8px;
+    text-align: left;
+    padding-left: 7px;
+
+}
+
+
+.formContact textarea {
+    margin-top: 6px;
+    border-radius: 5px;
+    width: 252px;
+    height: 175px;
+    resize: vertical;
+    padding: 7px;
+
+}
+
+
+.formContact input::placeholder {
+    color: #cdccd1;
+    text-align: left;
+    padding-left: 2px;
+    font-size: 13px;
+    
+}
+
+
+
+.formContact textarea::placeholder {
+    color: #cdccd1;
+    font-size: 14px;
+    padding-left: 2px;
+    
+}
+
+
+.containerContent {
+    height: 300px;
+    background-color: white;
+}
+
+
+.containerAboutUs {
+    height: 300px;
+    background-color: rgba(24, 19, 59)
+}
+
+
+.botaoSubmit {
+    color:white;
+    background-color: rgba(24, 19, 59);
+    border-radius: 5px;
+    padding-bottom: 4px;
+}
+
+.botaoSubmit:hover{
+    color:rgba(24, 19, 59);
+    background-color: white;
+}
+
+
+.botoesPrincipal {
+    position: relative;
+    top: -55px;
+    float: right;
+    width: 230px;
+    margin-right: 20px;
+
+}
+
+.botoesPrincipal p {
+    clear: both;
+}
+
+.botaoLoginPrincipal {
+    float: left;
+    
+}
+
+.botaoCadastrarPrincipal {
+    float:right;
+}
+
+.botoesPrincipal button {
+    width: 110px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.botoesPrincipal button:hover {
+    background-color: white;
+    color:rgba(24, 19, 59);
+}

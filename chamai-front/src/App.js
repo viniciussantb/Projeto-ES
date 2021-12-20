@@ -8,6 +8,7 @@ import UserContextProvider from './context/UserContext';
 import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 import Cabecalho from './Components/Cabecalho/Cabecalho'
 import Rodape from './Components/Rodape/Rodape'
+import Principal from './Pages/Principal/Principal'
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <BrowserRouter>
           <Cabecalho />
           <Routes>
+            <Route exact path='/principal' element={<Principal/>}/>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/signup' element={<Signup/>}/>
             <Route exact path='/login' element={ <Login/>}/>
