@@ -9,6 +9,7 @@ import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 import Cabecalho from './Components/Cabecalho/Cabecalho'
 import Rodape from './Components/Rodape/Rodape'
 import Principal from './Pages/Principal/Principal'
+import Configuracoes from './Pages/Configuracoes/Configuracoes'
 
 
 
@@ -24,6 +25,7 @@ function App() {
             <Route exact path='/signup' element={<Signup/>}/>
             <Route exact path='/login' element={ <Login/>}/>
             <Route exact path='/feed' element={ <Feed/>}/>
+            <Route exact path='/settings' element={ <Configuracoes/>}/>
             <Route exact path='/createride' element={ <CreateRidePage/>}/>
 
           </Routes>

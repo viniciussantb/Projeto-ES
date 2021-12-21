@@ -5,12 +5,18 @@ import styles from './Feed.module.css';
 import Ride from '../../Components/Ride/Ride'
 import CreateRide from '../../Components/Buttons/CreateRide/CreateRide';
 import carro from './carro.png';
+import config from './config.png';
+import oliveira from './oliveira.jpg'
 import perfilPadrao from './perfilPadrao.png';
 import { UserContext } from '../../context/UserContext';
+
+import { useNavigate } from "react-router";
 
 const Feed = () => {
   const [ rides, setRides ] = useState([]);
   const {user} = useContext(UserContext);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     //console.log(user);
@@ -30,18 +36,18 @@ const Feed = () => {
 
   return(
     <div className={styles.conteudoFeed}>
-
+    
         <div className={styles.feed}>
 
             <div className={styles.painelUsuario}>
                 
-                <img className={styles.fotoUsuario} src={perfilPadrao} />
+                <img className={styles.fotoUsuario} src={oliveira} />
                 
                 
                 <div className={styles.dadosUsuario}>
-                    <p>{user.name}</p>
-                    <p>{user.university}</p>
-                    <p>{user.course}</p>
+                    <p>{user.name} Vinícius Oliveira</p>
+                    <p>{user.university} UFPE</p>
+                    <p>{user.course} Sistemas de Informação</p>
                     <CreateRide />
                     
                    
@@ -49,6 +55,8 @@ const Feed = () => {
                 
 
                 <div className={styles.dadosCarro}>
+                    <img></img>
+                    <img src={config} width="30" className={styles.config} onClick={()=> navigate('/settings', {replace: true})} />
                     <img src={carro} width="25"/>
                     <p>{"Uno"}</p>
                     <p>{"Branco"}</p>

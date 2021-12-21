@@ -1,0 +1,92 @@
+h2 {
+    margin-top: -70px;
+    margin-left: 240px;
+    padding-bottom: 25px;
+}
+
+.mainContainerSettings {
+    flex: 1 0 auto;
+    margin: 30px auto;
+}
+
+.containerForm {
+    padding-top: 100px;
+    background-color: white;
+    border-radius: 50px;
+    height: 500px;
+    width: 650px;
+
+}
+
+.containerForm p {
+    clear: both
+}
+
+.containerForm input {
+    height: 35px;
+    border-radius: 6px;
+    text-align: left;
+    margin-left: 15px;
+    padding-left: 10px;
+    
+}
+
+
+.containerForm input::placeholder {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 2px;
+    color:#18133b;
+}
+
+.containerForm button {
+    border-radius:  6px;
+    padding-top: 7px;
+    margin-left: 27px;
+    height: 40px;
+}
+
+
+.containerForm button:hover {
+    background-color: white;
+    color:#18133b;
+    border: 1px solid #18133b;
+}
+
+
+.containerFormLeft {
+    width: 300px;
+    float: left;
+    text-align: center;
+    margin-left: 25px;
+}
+
+
+
+
+.containerFormRight {
+    float: right;
+    width: 300px;
+    text-align: center;
+    margin-right: 25px;
+
+}
+
+
+
+/* 
+     ======================= FOTO PERFIL ======================
+*/
+
+.tituloFotoPerfil {
+    margin-top: 77px;
+    font-size: 18px;
+    margin-right: 10px;
+   
+    
+}
+
+.fotoPerfil{
+    background-color: white;
+    margin-right: 28px;
+}
