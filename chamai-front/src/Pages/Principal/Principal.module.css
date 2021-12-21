@@ -5,10 +5,47 @@
     background-color: white;
 }
 
+/* ======================== CONTEUDO 1 =================================
+*/
 
-.containerCarrossel {
+.containerConteudo1 {
     height: 300px;
     background-color: white;
+}
+
+.Conteudo1Foto {
+    clear: both;
+    height: 300px;
+    width: 800px;
+    float:left;
+    margin-bottom: -60px;
+
+}
+
+
+.containerConteudo1 p {
+    clear:both;
+
+}
+
+.containerConteudo1 img {
+    margin-left: 105px;
+    margin-top: -155px;
+}
+
+.Conteudo1Texto {
+    margin-right: 115px;
+    height: 240px;
+    float: right;
+    width: 400px;   
+}
+
+.Conteudo1Texto p {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 33px;
+    color: #18133b;
+
 }
 
 
@@ -30,7 +67,7 @@
 .textContact p {
     margin-top: 60px;
     color: white;
-    font-size: 30px;
+    font-size: 29px;
     margin-left: 93px;
 }
 
@@ -89,11 +126,54 @@
 }
 
 
-.containerContent {
+/*  ================================ CONTAINER DO CONTEÚDO 2 ============================
+*/
+
+.containerConteudo2 {
     height: 300px;
     background-color: white;
 }
 
+
+.Conteudo2Foto {
+    clear: both;
+    height: 300px;
+    width: 460x;
+    float: right;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-right: 66px;
+
+
+}
+
+
+.containerConteudo2 p {
+    clear:both;
+
+}
+
+.containerConteudo2 img {
+    margin-top: -65px;
+}
+
+.Conteudo2Texto {
+    margin-left: 120px;
+    height: 240px;
+    float: left;
+    width: 400px;   
+}
+
+.Conteudo2Texto p {
+    margin-top: 80px;
+    text-align: left;
+    font-size: 33px;
+    color: #18133b;
+
+}
+
+/* ========================================= ABOUT US ****************************************************
+*/
 
 .containerAboutUs {
     height: 300px;
@@ -116,7 +196,7 @@
 
 .botoesPrincipal {
     position: relative;
-    top: -55px;
+    top: -56px;
     float: right;
     width: 230px;
     margin-right: 20px;
@@ -148,3 +228,72 @@
     background-color: white;
     color:rgba(24, 19, 59);
 }
+
+
+/* ============================= Membros GRUPO =========================
+*/
+
+
+.containerAboutUs img {
+    border-radius: 50%;
+    width: 77px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+
+.membrosGrupo1Container {
+    margin-top: 6px;
+    float:left;
+    padding-left: 100px;
+    height: 290px;
+    
+}
+
+.membrosGrupo2Container {
+    margin-top: -15px;
+    float:right;
+}
+
+
+.membrosGrupo1 {
+    margin-top: 16px;
+    width: 400px;
+    margin-left: 15px;
+
+}
+
+.membrosGrupo2 {
+    margin-top: 15px;
+    width: 350px;
+    margin-right: 60px;
+    
+
+    
+}
+
+.membrosGrupo1 div {
+    height: 75px;
+}
+
+.membrosGrupo1 div p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+
+
+.membrosGrupo2 div {
+    height: 75px;
+    margin-top: 10px;
+
+}
+
+.membrosGrupo2 div p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+

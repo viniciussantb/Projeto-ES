@@ -20,8 +20,7 @@ function App() {
         <BrowserRouter>
           <Cabecalho />
           <Routes>
-            <Route exact path='/principal' element={<Principal/>}/>
-            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/' element={<Principal/>}/>
             <Route exact path='/signup' element={<Signup/>}/>
             <Route exact path='/login' element={ <Login/>}/>
             <Route exact path='/feed' element={ <Feed/>}/>
