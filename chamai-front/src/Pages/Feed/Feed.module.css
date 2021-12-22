@@ -61,10 +61,48 @@
     cursor: pointer;
 }
 
+.config:hover {
+    float: right;
+    cursor: pointer;
+    width: 32px;
+}
+
 .fotoUsuario {
     float: left;
     border-radius: 50%;
     width: 70px;
     margin-left: 30px;
     
+}
+
+
+
+
+.botoesFeed {
+    position: relative;
+    top: -56px;
+    float: right;
+    width: 230px;
+    margin-right: 20px;
+   
+
+}
+
+.botaoLeaveFeed {
+    float: right;
+    width: 75px;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    
+}
+
+.botaoLeaveFeed:hover {
+    background-color: white;
+    color:rgba(24, 19, 59);
+    
+}
+
+.botoesFeed p {
+    clear: both;
 }

@@ -111,7 +111,7 @@ function Principal() {
 
                         <div classeName={styles.membrosGrupo1Content}>
                             <p>Mayara Gomes</p>
-                            <p>Gerente de projetos</p>
+                            <p>Suporte ao projeto</p>
                         </div>
 
                     </div>

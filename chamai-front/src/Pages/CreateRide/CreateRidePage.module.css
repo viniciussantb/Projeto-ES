@@ -26,6 +26,12 @@
     margin-top: 5px;
 }
 
+.createRideForm input::placeholder {
+    color:rgba(24, 19, 59);
+}
+
+
+
 button {
     
     margin: 0 auto;
