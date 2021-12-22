@@ -6,7 +6,7 @@ const carSchema = new mongoose.Schema({
         required : true
     },
 
-    model : {
+    car : {
         type : String,
         requried : true
     },

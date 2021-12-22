@@ -17,3 +17,8 @@ module.exports.getUser = async function(app, req, res){
       res.status(500).send(error);
   }
 }
+
+module.exports.updateUser = async function(app, req, res){
+    const userModel = require('../models/user');
+
+}

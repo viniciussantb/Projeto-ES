@@ -1,32 +1,29 @@
 import React, {
-    useState
+    useState,
+    useContext,
 } from "react";
+import { UserContext } from "../../context/UserContext";
 
 import styles from './Configuracoes.module.css'
 
 const Configuracoes = ({ onSubmit }) => {
+    const {email, setEmail} = useContext(UserContext)
+
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
+    const [newEmail, setNewEmail] = useState('');
     const [university, setUniversity] = useState('');
     const [course, setCourse] = useState('');
     const [password, setPassword] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [photo, setPhoto] = useState();
+    const [car, setCar] = useState('');
+    const [color, setColor] = useState('');
+    const [licensePlate, setLicensePlate] = useState('');
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
         
-        const data = {
-            name,
-            lastName,
-            email,
-            university,
-            course,
-            password,
-            phoneNumber
-        }
-
-        onSubmit(data);
     }
 
     return (
@@ -39,7 +36,7 @@ const Configuracoes = ({ onSubmit }) => {
                 <div className={styles.containerFormLeft}>
                         <input type="name" placeholder='Nome' value={name} onChange={(e)=> setName(e.target.value)}/>
                         <input type="name" placeholder='Sobrenome' value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
-                        <input type="email" placeholder='E-mail' value={email} onChange={(e)=> setEmail(e.target.value)}/>
+                        <input type="email" placeholder='E-mail' value={newEmail} onChange={(e)=> setNewEmail(e.target.value)}/>
                         <input type="password" placeholder='Senha' value={password} onChange={(e)=> setPassword(e.target.value)}/>
                         <input type="text" placeholder='Faculdade' value={university} onChange={(e)=> setUniversity(e.target.value)}/>
                         <input type="text" placeholder='Curso' value={course} onChange={(e)=> setCourse(e.target.value)}/>
@@ -50,11 +47,11 @@ const Configuracoes = ({ onSubmit }) => {
 
                 
                 <div className={styles.containerFormRight}>
-                        <input type="name" placeholder='Carro' />
-                        <input type="name" placeholder='Cor do carro'  />
-                        <input type="email" placeholder='Placa do carro'  />
+                        <input type="text" value={car} placeholder='Carro' onChange={(e)=> setCar(e.target.value)} />
+                        <input type="text" value={color} placeholder='Cor do carro' onChange={(e)=> setColor(e.target.value)}/>
+                        <input type="text" value={licensePlate} placeholder='Placa do carro' onChange={(e)=> setLicensePlate(e.target.value)}/>
                         <p className={styles.tituloFotoPerfil}>Escolha uma foto de perfil:</p>
-                        <input className={styles.fotoPerfil} type="file"/>
+                        <input className={styles.fotoPerfil} type="file" value={photo} onChange={(e)=> setPhoto(e.target.value)}/>
             
                         
 

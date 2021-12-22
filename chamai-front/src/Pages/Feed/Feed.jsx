@@ -41,13 +41,13 @@ const Feed = () => {
 
             <div className={styles.painelUsuario}>
                 
-                <img className={styles.fotoUsuario} src={oliveira} />
+                <img className={styles.fotoUsuario} src={user.image} />
                 
                 
                 <div className={styles.dadosUsuario}>
-                    <p>{user.name} Vinícius Oliveira</p>
-                    <p>{user.university} UFPE</p>
-                    <p>{user.course} Sistemas de Informação</p>
+                    <p>{user.name}</p>
+                    <p>{user.university}</p>
+                    <p>{user.course}</p>
                     <CreateRide />
                     
                    

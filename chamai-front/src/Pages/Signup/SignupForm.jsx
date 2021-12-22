@@ -13,6 +13,7 @@ const Signup = ({ onSubmit }) => {
     const [course, setCourse] = useState('');
     const [password, setPassword] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [image, setImage] = useState();
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -24,7 +25,8 @@ const Signup = ({ onSubmit }) => {
             university,
             course,
             password,
-            phoneNumber
+            phoneNumber,
+            image
         }
 
         onSubmit(data);

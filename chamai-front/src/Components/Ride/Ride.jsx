@@ -30,9 +30,9 @@ function Ride({ rideProps }) {
                     <p>{rideDate.getDate()}/{rideDate.getMonth()}/{rideDate.getFullYear()}</p>
                     <p>{rideProps.time}</p>
                     <p>{rideProps.vagas}</p>
-
                 </div>
             </div>
+
         </div>
     )
 }
