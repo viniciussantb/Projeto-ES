@@ -93,13 +93,12 @@
     height: 32px;
     width: 225px;
 
-    text-align: center;
+    text-align: left;
     text-justify: center;
 }
 
-input::placeholder {
-    color: white;
-    font-size: 15px;
-    text-align: center;
+.div-buttons-signup input::placeholder {
+    font-size: 14px;
+    color: #18133b
     
 }

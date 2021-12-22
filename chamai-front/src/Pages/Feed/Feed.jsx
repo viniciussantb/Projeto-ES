@@ -36,6 +36,17 @@ const Feed = () => {
 
   return(
     <div className={styles.conteudoFeed}>
+
+      <div className={styles.botoesFeed}>
+                <button   className={styles.botaoLeaveFeed} onClick={()=> navigate('/', {replace: true})}>
+                    SAIR
+
+                </button>
+
+                <p></p>
+
+        </div>
+
     
         <div className={styles.feed}>
 
@@ -68,9 +79,9 @@ const Feed = () => {
 
             <div className={styles.feedCaronas}>
               {rideList}
+              
               <div>
                 <p>
-                
                 </p>
               </div>
             </div>
