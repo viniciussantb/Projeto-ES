@@ -19,7 +19,6 @@ const Feed = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    //console.log(user);
     async function getRides() {
       await fetch('http://localhost:8080/rides', {
         method: 'GET',

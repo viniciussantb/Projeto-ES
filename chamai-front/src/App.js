@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login';
 import Feed from './Pages/Feed/Feed';
 import EmailContextProvider from './context/EmailContext';
 import UserContextProvider from './context/UserContext';
+import AuthApiContextProvider from './context/AuthApiContext';
 import CreateRidePage from './Pages/CreateRide/CreateRidePage'
 import Cabecalho from './Components/Cabecalho/Cabecalho'
 import Rodape from './Components/Rodape/Rodape'
@@ -16,23 +17,25 @@ import Configuracoes from './Pages/Configuracoes/Configuracoes'
 function App() {
 
   return (
-    <UserContextProvider>
-      <EmailContextProvider>
-        <BrowserRouter>
-          <Cabecalho />
-          <Routes>
-            <Route exact path='/' element={<Principal/>}/>
-            <Route exact path='/signup' element={<Signup/>}/>
-            <Route exact path='/login' element={ <Login/>}/>
-            <Route exact path='/feed' element={ <Feed/>}/>
-            <Route exact path='/settings' element={ <Configuracoes/>}/>
-            <Route exact path='/createride' element={ <CreateRidePage/>}/>
+    <AuthApiContextProvider>
+      <UserContextProvider>
+        <EmailContextProvider>
+          <BrowserRouter>
+            <Cabecalho />
+            <Routes>
+              <Route exact path='/' element={<Principal/>}/>
+              <Route exact path='/signup' element={<Signup/>}/>
+              <Route exact path='/login' element={ <Login/>}/>
+              <Route exact path='/feed' element={ <Feed/>}/>
+              <Route exact path='/settings' element={ <Configuracoes/>}/>
+              <Route exact path='/createride' element={ <CreateRidePage/>}/>
 
-          </Routes>
-          <Rodape />
-      </BrowserRouter>
-    </EmailContextProvider>
-  </UserContextProvider>
+            </Routes>
+            <Rodape />
+          </BrowserRouter>
+        </EmailContextProvider>
+      </UserContextProvider>
+    </AuthApiContextProvider>
 
   )
 }

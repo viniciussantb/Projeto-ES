@@ -4,6 +4,7 @@ import React, {
 } from "react";
 import LoginForm from "./LoginForm";
 import { EmailContext } from "../../context/EmailContext";
+import { AuthApiContext } from "../../context/AuthApiContext";
 import { LoginService } from "../../services/LoginService";
 import { useNavigate } from "react-router";
 import './login.css';
@@ -11,6 +12,7 @@ import { UserContext } from "../../context/UserContext";
 
 const Login = () => {
     const { setUser } = useContext(UserContext);
+    const { setAuth } = useContext(AuthApiContext);
     const navigate = useNavigate();
 
     const onSubmit = async (data) => {
@@ -23,6 +25,7 @@ const Login = () => {
           }).then(res => res.json())
             .then(data => {
                 setUser(data);
+                setAuth(true);
                 navigate('/feed', { replace: true })
             })
             .catch(err => console.log(err));
